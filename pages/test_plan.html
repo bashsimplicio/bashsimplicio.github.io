@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloadable Test Plan Maker</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Downloadable Test Plan Maker</h1>
+
+    <section>
+      <h2>Test Plan Body</h2>
+      <div id="row-buttons" class="button-group"></div>
+      <input class="add-input" type="text" id="custom-row" placeholder="Add custom row" />
+      <button class="add-button" onclick="addCustom('row')">Add Row</button>
+      <p id="row-error" class="error"></p>
+    </section>
+
+    <section>
+      <h2>Table Headers</h2>
+      <div id="header-buttons" class="button-group"></div>
+      <input class="add-input" type="text" id="custom-header" placeholder="Add custom header" />
+      <button class="add-button" onclick="addCustom('header')">Add Header</button>
+      <p id="header-error" class="error"></p>
+    </section>
+
+    <section>
+      <h2>Preview Table</h2>
+      <div id="preview"></div>
+    </section>
+
+    <button id="downloadBtn" onclick="downloadCSV()">Download CSV</button>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+  font-family: "Darumadrop One", sans-serif;
+  color: #f8f9fa;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  background: #669691;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: left;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.button-group button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #495057;
+  color: white;
+  cursor: pointer;
+  font-family: "Pixel Operator", monospace;
+}
+.button-group button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+td, th {
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 0.5rem;
+  position: relative;
+  font-family: "Pixel Operator", monospace;
+  color:#495057
+}
+th {
+  background: #f1f1f1;
+  text-align: left;
+}
+.remove-btn {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: red;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+tr:hover .remove-btn,
+th:hover .remove-btn {
+  display: inline;
+}
+
+#downloadBtn {
+  display: block;
+  margin: 1rem auto 0 auto;
+  padding: 0.75rem 1.5rem;
+  background: #81b2ad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Pixel Operator", monospace;
+}
+#downloadBtn:hover {
+  background: #495057;
+}
+
+.add-button {
+  background-color: #81b2ad;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Pixel Operator", monospace;
+}
+
+.add-button:hover {
+  background-color: #495057;
+}
+
+.add-input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: "Pixel Operator", monospace;
+}
